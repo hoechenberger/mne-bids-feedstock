@@ -117,4 +117,5 @@ Feedstock Maintainers
 =====================
 
 * [@hoechenberger](https://github.com/hoechenberger/)
+* [@jasmainak](https://github.com/jasmainak/)
 
