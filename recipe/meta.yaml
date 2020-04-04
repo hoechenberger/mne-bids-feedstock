@@ -13,21 +13,27 @@ build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  entry_points:
+     - mne_bids = mne_bids.commands.run:main
 
 requirements:
   host:
-    - python >=3
+    - python >=3.5
     - pip
   run:
-    - python >=3
+    - python >=3.5
     - numpy
     - scipy
     - nibabel
     - mne
+    - pybv >=0.2.0
 
 test:
   imports:
     - mne_bids
+  commands:
+     # Test the entry point.
+     - mne_bids --version
 
 about:
   home: https://mne.tools/mne-bids/
