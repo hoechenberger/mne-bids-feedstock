@@ -1,5 +1,5 @@
 {% set name = "mne-bids" %}
-{% set version = "0.4" %}
+{% set version = "0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a8af1d74172a639519f7f48fc5663f007201b1d8762c44afa09be9c090859cc2
+  sha256: af57071616539cfdeaebac48468b74e7868df06e0ba38554eb295d4de5293d97
 
 build:
   noarch: python
@@ -18,15 +18,15 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
+    - python >=3.6
     - numpy
     - scipy
     - nibabel
-    - mne >=0.19.1
-    - pybv >=0.2.0
+    - mne >=0.21
+    - pybv >=0.2
 
 test:
   imports:
