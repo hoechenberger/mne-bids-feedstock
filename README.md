@@ -5,11 +5,11 @@ Home: https://mne.tools/mne-bids/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mne-bids-feedstock/blob/master/LICENSE.txt)
 
 Summary: An MNE project for organizing and formatting MEG and EEG data according to the BIDS specification
 
-
+Development: https://github.com/mne-tools/mne-bids
 
 Current build status
 ====================
